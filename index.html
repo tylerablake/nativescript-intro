@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>reveal.js</title>
+	<title>NativeScript Intro</title>
 
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/reveal.css">
@@ -80,6 +80,23 @@
 			</section>
 			<section>
 				<section>
+					<h2>How it Works</h2>					
+					<img src="assets/images/how-it-works.png"  style="text-align: center;">
+					<aside class="notes">
+						<p>You write JS/TS code</p>
+						<p>It runs inside of the device's JavaScript VM</p>
+						<ul>
+							<li>Android - V8</li>
+							<li>iOS - JavaScriptCore</li>
+						</ul>
+						<p>NS generates metadata which tells what native API's are available</p>
+						<p>The JS code is ran through a type conversion process to convert it to native</p>
+						<p>The converted code is sent to the call dispatcher to call the native API's</p>
+					</aside>
+				</section>
+			</section>
+			<section>
+				<section>
 					<h2>Why NativeScript?</h2>
 					<br>
 					<ul>
@@ -112,7 +129,7 @@
 							</ul>
 						</li>
 						<li class="fragment">
-							NativeScript SideKick
+							NativeScript Sidekick
 							<ul>
 								<li class="fragment">Tool to accelerate building NS apps with a UI</li>
 							</ul>
@@ -121,7 +138,7 @@
 							NativeScript CLI
 							<ul>
 								<li class="fragment">Configure your local machine</li>
-								<li class="fragment">Used your preferred editor</li>
+								<li class="fragment">Richest development experience</li>
 							</ul>
 						</li>
 					</ul>
