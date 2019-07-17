@@ -66,10 +66,39 @@
 					</div>
 				</section>
 			</section>
+
 			<section data-background="#3A435E">
 				<section>
-					<h2>What is NativeScript</h2>
-					<br>
+					<h2>Agenda</h2>
+				</section>
+				<section>
+					<ul>
+						<li>
+							Review
+							<ul>
+								<li class="fragment">What is NativeScript?</li>
+								<li class="fragment">How it works</li>
+								<li class="fragment">Why NativeScript?</li>
+								<li class="fragment">How to get started</li>
+							</ul>
+						</li>
+						<li>
+							Demo
+							<ul>
+								<li class="fragment">NativeScript Playground</li>
+								<li class="fragment">NativeScript Layouts</li>
+								<li class="fragment">NativeScript Widgets</li>
+								<li class="fragment">Styling</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</section>
+
+			<section data-background="#3A435E">
+				<section>
+					<h2>What is NativeScript?</h2>
+					<!-- <br>
 					<ul>
 						<li class="fragment">Open Source, backed by Progress</li>
 						<li class="fragment">Multiple flavors (Vanilla, Angular, and Vue)</li>
@@ -81,12 +110,41 @@
 								<li class="fragment">Enables the same customization as native</li>
 							</ul>
 						</li>
+					</ul> -->
+				</section>
+				<section>
+					<ul>
+						<li>Framework to build truly native cross platform mobile apps</li>
+						<li class="fragment">Open Source, backed by Progress</li>
+						<li class="fragment">Multiple flavors (Vanilla, Angular, and Vue)</li>
+						<li class="fragment">
+							Wait... but <u>truly native</u> apps?
+							<ul>
+								<li class="fragment">Access to native objc/Java classes</li>
+								<li class="fragment">Provides native performance</li>
+								<li class="fragment">Enables the same customization as native</li>
+							</ul>
+						</li>
 					</ul>
 				</section>
 			</section>
 			<section data-background="#3A435E">
 				<section>
 					<h2>How it Works</h2>
+					<!-- <img src="assets/images/how-it-works.png" style="text-align: center;">
+					<aside class="notes">
+						<p>You write JS/TS code</p>
+						<p>It runs inside of the device's JavaScript VM</p>
+						<ul>
+							<li>Android - V8</li>
+							<li>iOS - JavaScriptCore</li>
+						</ul>
+						<p>NS generates metadata which tells what native API's are available</p>
+						<p>The JS code is ran through a type conversion process to convert it to native</p>
+						<p>The converted code is sent to the call dispatcher to call the native API's</p>
+					</aside> -->
+				</section>
+				<section data-background="#3A435E">
 					<img src="assets/images/how-it-works.png" style="text-align: center;">
 					<aside class="notes">
 						<p>You write JS/TS code</p>
@@ -104,7 +162,7 @@
 			<section data-background="#3A435E">
 				<section>
 					<h2>Why NativeScript?</h2>
-					<br>
+					<!-- <br>
 					<ul>
 						<li class="fragment">100% sharable code across platforms (Android and iOS)</li>
 						<li class="fragment">Can use existing web development knowledge</li>
@@ -117,16 +175,36 @@
 							</ul>
 						</li>
 					</ul>
+					<aside class="notes">
+						Talk about why I chose NativeScript...wanted to get into mobile and only had web/angular
+						experience
+					</aside> -->
 				</section>
-				<aside class="notes">
-					Talk about why I chose NativeScript...wanted to get into mobile and only had web/angular experience
-				</aside>
+				<section>
+					<ul>
+						<li>100% sharable code across platforms (Android and iOS)</li>
+						<li class="fragment">Can use existing web development knowledge</li>
+						<li class="fragment">
+							Allows you to use existing libraries
+							<ul>
+								<li class="fragment">NPM (Node, some exclusions apply 😁)</li>
+								<li class="fragment">CocoaPods (iOS)</li>
+								<li class="fragment">Android Arsenal (Android)</li>
+							</ul>
+						</li>
+					</ul>
+					<aside class="notes">
+						Talk about why I chose NativeScript...wanted to get into mobile and only had web/angular
+						experience
+					</aside>
+				</section>
+
 			</section>
 			<section data-background="#3A435E">
 				<section>
 					<h2>How to Get Started</h2>
 					<br>
-					<ul>
+					<!-- <ul>
 						<li class="fragment">
 							NativeScript Playground
 							<ul>
@@ -147,8 +225,38 @@
 								<li class="fragment">Richest development experience</li>
 							</ul>
 						</li>
+					</ul> -->
+				</section>
+				<section>
+					<h2>NativeScript Playground</h2>
+					<br>
+
+					<ul>
+						<li class="fragment">Web based IDE</li>
+						<li class="fragment">Get started quickly and test on iOS and Android devices</li>
+					</ul>
+
+
+				</section>
+				<section>
+					<h2>NativeScript Sidekick</h2>
+					<br>
+					<ul>
+						<li class="fragment">Tool to accelerate building NS apps with a UI for creating, building, and
+							testing NativeScript apps</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<h2>NativeScript CLI</h2>
+					<br>
+					<ul>
+						<li class="fragment">Configure your local machine</li>
+						<li class="fragment">Richest development experience</li>
 					</ul>
 				</section>
+
 			</section>
 			<section data-background="#3A435E">
 				<section>
@@ -165,7 +273,7 @@
 				<section>
 					<h2>NativeScript Playground Overview</h2>
 				</section>
-				<section data-background="#3A435E">
+				<!-- <section data-background="#3A435E">
 					<h4>Toolbar</h4>
 					<br>
 					<img src="assets/images/playground-overview-toolbar.png" style="text-align: center;">
@@ -180,7 +288,7 @@
 					<h4>Drag and Drop UI</h4>
 					<img src="assets/images/playground-overview-drag-and-drop.png" height="50%" width="50%"
 						style="text-align: center;">
-				</section>
+				</section> -->
 			</section>
 			<section data-background="#3A435E">
 				<section>
@@ -228,7 +336,8 @@
 				</section>
 				<section data-background="#3A435E">
 
-					<p>Link to follow along: <a target="_blank" href="https://bit.ly/2JzXRJv">https://bit.ly/2JzXRJv</a></p>
+					<p>Link to follow along: <a target="_blank" href="https://bit.ly/2JzXRJv">https://bit.ly/2JzXRJv</a>
+					</p>
 					<br>
 
 					<img src="assets/images/detail-page-before-and-after.png" style="text-align: center;" height="70%"
