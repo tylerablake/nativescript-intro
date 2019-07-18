@@ -64,6 +64,17 @@
 					<div class="right-content fragment">
 						<img src="assets/images/crowdSurf.jpg" style="text-align: center;">
 					</div>
+					<aside class="notes">
+						<p>The goal of this talk is:</p>
+						<p>To give you a very brief overview of NativeScript</p>
+						<p>Hopefully spark some interest to</p>
+						<ul>
+							<li>try it on your own</li>
+							<li>reach out and ask questions after</li>
+							<li>stick around for my next talk</li>
+						</ul>
+
+					</aside>
 				</section>
 			</section>
 
@@ -85,10 +96,9 @@
 						<li>
 							Demo
 							<ul>
-								<li class="fragment">NativeScript Playground</li>
 								<li class="fragment">NativeScript Layouts</li>
 								<li class="fragment">NativeScript Widgets</li>
-								<li class="fragment">Styling</li>
+								<li class="fragment">Styling NativeScript Apps</li>
 							</ul>
 						</li>
 					</ul>
@@ -98,19 +108,6 @@
 			<section data-background="#3A435E">
 				<section>
 					<h2>What is NativeScript?</h2>
-					<!-- <br>
-					<ul>
-						<li class="fragment">Open Source, backed by Progress</li>
-						<li class="fragment">Multiple flavors (Vanilla, Angular, and Vue)</li>
-						<li class="fragment">
-							Builds truly native apps?
-							<ul>
-								<li class="fragment">Access to all native objc/Java classes</li>
-								<li class="fragment">Provides native performance</li>
-								<li class="fragment">Enables the same customization as native</li>
-							</ul>
-						</li>
-					</ul> -->
 				</section>
 				<section>
 					<ul>
@@ -131,18 +128,6 @@
 			<section data-background="#3A435E">
 				<section>
 					<h2>How it Works</h2>
-					<!-- <img src="assets/images/how-it-works.png" style="text-align: center;">
-					<aside class="notes">
-						<p>You write JS/TS code</p>
-						<p>It runs inside of the device's JavaScript VM</p>
-						<ul>
-							<li>Android - V8</li>
-							<li>iOS - JavaScriptCore</li>
-						</ul>
-						<p>NS generates metadata which tells what native API's are available</p>
-						<p>The JS code is ran through a type conversion process to convert it to native</p>
-						<p>The converted code is sent to the call dispatcher to call the native API's</p>
-					</aside> -->
 				</section>
 				<section data-background="#3A435E">
 					<img src="assets/images/how-it-works.png" style="text-align: center;">
@@ -153,8 +138,8 @@
 							<li>Android - V8</li>
 							<li>iOS - JavaScriptCore</li>
 						</ul>
-						<p>NS generates metadata which tells what native API's are available</p>
-						<p>The JS code is ran through a type conversion process to convert it to native</p>
+						<p>The NS runtime generates metadata which tells what native API's are available</p>
+						<p>The JS code is ran through a type conversion process to convert it to native API's</p>
 						<p>The converted code is sent to the call dispatcher to call the native API's</p>
 					</aside>
 				</section>
@@ -162,23 +147,6 @@
 			<section data-background="#3A435E">
 				<section>
 					<h2>Why NativeScript?</h2>
-					<!-- <br>
-					<ul>
-						<li class="fragment">100% sharable code across platforms (Android and iOS)</li>
-						<li class="fragment">Can use existing web development knowledge</li>
-						<li class="fragment">
-							Allows you to use existing libraries
-							<ul>
-								<li class="fragment">NPM (Node, some exclusions apply 😁)</li>
-								<li class="fragment">CocoaPods (iOS)</li>
-								<li class="fragment">Android Arsenal (Android)</li>
-							</ul>
-						</li>
-					</ul>
-					<aside class="notes">
-						Talk about why I chose NativeScript...wanted to get into mobile and only had web/angular
-						experience
-					</aside> -->
 				</section>
 				<section>
 					<ul>
@@ -194,8 +162,8 @@
 						</li>
 					</ul>
 					<aside class="notes">
-						Talk about why I chose NativeScript...wanted to get into mobile and only had web/angular
-						experience
+						<p>I chose NS because I had a full stack web background and wanted to get into Angular and
+							mobile</p>
 					</aside>
 				</section>
 
@@ -204,28 +172,6 @@
 				<section>
 					<h2>How to Get Started</h2>
 					<br>
-					<!-- <ul>
-						<li class="fragment">
-							NativeScript Playground
-							<ul>
-								<li class="fragment">Web based IDE</li>
-								<li class="fragment">Get started quickly and test on iOS and Android devices</li>
-							</ul>
-						</li>
-						<li class="fragment">
-							NativeScript Sidekick
-							<ul>
-								<li class="fragment">Tool to accelerate building NS apps with a UI</li>
-							</ul>
-						</li>
-						<li class="fragment">
-							NativeScript CLI
-							<ul>
-								<li class="fragment">Configure your local machine</li>
-								<li class="fragment">Richest development experience</li>
-							</ul>
-						</li>
-					</ul> -->
 				</section>
 				<section>
 					<h2>NativeScript Playground</h2>
@@ -236,7 +182,6 @@
 						<li class="fragment">Get started quickly and test on iOS and Android devices</li>
 					</ul>
 
-
 				</section>
 				<section>
 					<h2>NativeScript Sidekick</h2>
@@ -244,6 +189,8 @@
 					<ul>
 						<li class="fragment">Tool to accelerate building NS apps with a UI for creating, building, and
 							testing NativeScript apps</li>
+						<li class="fragment">GUI for the CLI</li>
+						<li class="fragment">Lets you use your preferred IDE</li>
 					</ul>
 
 				</section>
@@ -261,38 +208,36 @@
 			<section data-background="#3A435E">
 				<section>
 					<h2>Getting Started with NS Playground</h2>
-					<br>
-					<ul>
-						<li class="fragment">Download NativeScript Playground App</li>
-						<li class="fragment">Download NativeScript Preview App</li>
-						<li class="fragment">Open the playground, play.nativescript.org</li>
-					</ul>
+					<div class="left-content">
+						<ul>
+							<li>Download NS Playground App</li>
+							<li>Download NS Preview App</li>
+							<li>Open the playground, play.nativescript.org</li>
+						</ul>
+					</div>
+					<div class="right-content">
+						<img src="assets/images/playground-preview-app-store-screenshot.png" height="55%" width="55%">
+					</div>
+
 				</section>
-			</section>
-			<section data-background="#3A435E">
-				<section>
-					<h2>NativeScript Playground Overview</h2>
-				</section>
-				<!-- <section data-background="#3A435E">
-					<h4>Toolbar</h4>
-					<br>
-					<img src="assets/images/playground-overview-toolbar.png" style="text-align: center;">
-				</section>
-				<section data-background="#3A435E">
-					<h4>QR Code</h4>
-					<br>
-					<img src="assets/images/playground-overview-qr.png" height="50%" width="50%"
-						style="text-align: center;">
-				</section>
-				<section data-background="#3A435E">
-					<h4>Drag and Drop UI</h4>
-					<img src="assets/images/playground-overview-drag-and-drop.png" height="50%" width="50%"
-						style="text-align: center;">
-				</section> -->
 			</section>
 			<section data-background="#3A435E">
 				<section>
 					<h2>Layout Overview</h2>
+					<aside class="notes">
+						<p>In NativeScript everything must be inside of a container</p>
+						<br>
+
+						<p>There are 6 layout containers </p>
+
+						<p>Absolute</p>
+						<p>Dock</p>
+						<p>Grid</p>
+						<p>Stack</p>
+						<p>Wrap</p>
+						<p>Flexbox</p>
+
+					</aside>
 				</section>
 				<section data-background="#3A435E">
 					<div class="left-content">
@@ -326,8 +271,14 @@
 			</section>
 			<section data-background="#3A435E">
 				<section>
-					<h2>OK enough of that...</h2>
-					<h2>Let's build something</h2>
+					<h2>OK I know what you are saying...</h2>
+				</section>
+				<section>
+					<img src="assets/images/im-bored.jpg" style="text-align: center;">
+				</section>
+				<section>
+					<h2>No seriously...</h2>
+					<h3>Let's build something</h3>
 				</section>
 				<section data-background="#3A435E">
 					<h4>What We'll Make</h4>
